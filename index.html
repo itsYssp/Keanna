@@ -569,11 +569,11 @@ The best of me
     </p>
 
     <script>
-        window.onload = function() {
-        var audio = document.getElementById("myMusic");
-        audio.currentTime = 30; // Set the timestamp in seconds
-        audio.play();
-    };          
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var audio = document.getElementById('myAudio');
+            audio.currentTime = 30; // Set the timestamp in seconds
+            audio.play();
+        });
     </script>
 
 </body>
